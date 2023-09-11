@@ -1,6 +1,6 @@
 {
-  "name": "starter-next-ts-tailwind-graphql",
-  "version": "0.1.0",
+  "name": "jeremie-helme-portfolio-2023",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
