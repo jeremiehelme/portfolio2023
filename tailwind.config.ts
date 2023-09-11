@@ -17,7 +17,8 @@ const config: Config = {
         mono: ['var(--font-roboto)'],
       },
       fontSize: {
-      '6xl' :'5rem'
+        '4xl': '2.5rem',
+        '6xl': '5rem'
       }
     },
   },
