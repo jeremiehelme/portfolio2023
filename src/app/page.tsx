@@ -37,8 +37,8 @@ export default function Home() {
 
 
       <div className='fixed bottom-5 right-5 flex flex-row gap-x-2 items-center'>
-        <p>I'm available in Freelance</p>
-        <Button>Let's Talk !</Button>
+        <p>I&apos;m available in Freelance</p>
+        <Button>Let&apos;s Talk !</Button>
       </div>
 
       <section className='relative min-h-screen max-w-[1300px] mx-auto'>
