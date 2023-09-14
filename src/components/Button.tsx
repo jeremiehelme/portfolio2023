@@ -1,6 +1,6 @@
 type Props = {
   children: React.ReactNode,
-  className: string | undefined
+  className?: string
 };
 
 export default function Button({ className, children }: Props) {
