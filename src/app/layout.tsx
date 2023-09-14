@@ -25,8 +25,8 @@ const roboto = Roboto({ weight: ['300','500'], subsets: ['latin'], variable: '--
 
 
 export const metadata: Metadata = {
-  title: 'Jeremie Helme - front-end developer',
-  description: 'Jeremie Helme - front-end developer',
+  title: 'Jeremie Helme - fullstack developer',
+  description: 'Jeremie Helme - fullstack developer',
 }
 
 export default function RootLayout({
