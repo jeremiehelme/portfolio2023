@@ -174,7 +174,7 @@ export default function Home() {
           <div className='flex-1'>
             <p><strong>Application BtoB - Salon Ecommerce</strong></p>
             <p>Nous avons confié le développement de notre application mobile.
-              Nous sommes très satisfaits, respect du timing, l'app est stable, fonctionne très bien, ergonomique et est utilisée sans aucun souci depuis plus de 3 ans par des dizaines d'exposants. C'est ce qui fait toute la différence et professionnalisme</p>
+              Nous sommes très satisfaits, respect du timing, l&apos;app est stable, fonctionne très bien, ergonomique et est utilisée sans aucun souci depuis plus de 3 ans par des dizaines d&apos;exposants. C&apos;est ce qui fait toute la différence et professionnalisme</p>
           </div>
         </div>
 
@@ -184,9 +184,9 @@ export default function Home() {
             Sebastien Cramon<br /><i>Flairplay</i>
           </div>
           <div className='flex-1 '>
-            <p><strong>Marketplace mobile dans l'univers du sport</strong></p>
-            <p>J'ai travaillé avec Jérémie pour le développement de notre application mobile sur iOS et Android.
-              Jérémie a montré un réel esprit d'initiative pour proposer des solutions efficaces à nos problématiques.
+            <p><strong>Marketplace mobile dans l&apos;univers du sport</strong></p>
+            <p>J&apos;ai travaillé avec Jérémie pour le développement de notre application mobile sur iOS et Android.
+              Jérémie a montré un réel esprit d&apos;initiative pour proposer des solutions efficaces à nos problématiques.
               Son investissement et sa flexibilité, malgré des ajustements contants, ont été clés pour finaliser notre projet !
             </p>
             <p>Un grand merci !</p>
