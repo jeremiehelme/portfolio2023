@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import CTA from '@/components/CTA'
 import Menu from '@/components/Menu'
-import MenuItem from '@/components/MenuItem'
+import Button from '@/components/Button'
 import Title2 from '@/components/Title2'
 import SectionTitle from '@/components/SectionTitle'
 import Section from '@/components/Section'
@@ -17,15 +17,13 @@ export default function Home() {
 
       <Menu className='max-w-[1300px] max-lg:px-6 fixed z-20 top-0 w-full left-1/2 -translate-x-1/2'>
         <div className='font-bold font-sans text-base'>JH</div>
-        <div className='hidden lg:flex absolute top-3 left-1/2 -translate-x-1/2 flex-row gap-x-8'><MenuItem><Link href='/'>Home</Link></MenuItem><MenuItem><Link href='/'>Services</Link></MenuItem><MenuItem><Link href='/'>Projects</Link></MenuItem></div>
-        <div className='lg:hidden'>-</div>
       </Menu>
 
 
       <CTA />
 
 
-      <Section className='h-screen min-h-[700px] max-h-[900px] items-center'>
+      <Section className='lg:h-screen lg:min-h-[700px] max-h-[900px] items-center'>
         <div className="max-lg:w-full col-span-4 flex flex-col gap-y-2">
           <h2 className="text-primary font-bold text-xl lg:text-2xl leading-tight tracking-tight">Jérémie Helme</h2>
           <h1 className="relative z-20 text-4xl lg:text-6xl font-sans font-bold leading-[2rem] lg:leading-[3.2rem] tracking-[-0.1rem] lg:tracking-[-0.3rem] flex flex-col">
@@ -34,7 +32,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="col-start-9 col-span-4 flex flex-col gap-y-8 relative z-10">
+        <div className="lg:col-start-9 col-span-4 flex flex-col gap-y-8 relative z-10 items-start">
           <div className='flex flex-col gap-y-3 text-primary'>
             <Title2>I help <span className='text-secondary'>Startups</span> and <span className='text-secondary'>Agencies</span> build exceptional <span className='text-secondary'>digital products</span></Title2>
             <Text>
@@ -46,15 +44,15 @@ export default function Home() {
               </p>
             </Text>
           </div>
-          <Image src={"./clients.png"} alt="jeremie helme - clients" width={385} height={70} priority />
+          <Image src={"./clients.png"} alt="jeremie helme - clients" width={350} height={70} priority />
         </div>
 
 
-        <Image src={"./portrait.png"} className='hidden lg:block absolute top-20 left-1/2 -translate-x-1/2' alt="jeremie helme - developer" width={573} height={765} priority />
+        <Image src={"./portrait.png"} className='max-lg:hidden lg:absolute lg:top-20 lg:left-1/2 lg:-translate-x-[60%]' alt="jeremie helme - developer" width={573} height={765} priority />
 
       </Section>
 
-      <Section className='mt-32  min-h-[30vh]'>
+      <Section className='min-h-[30vh]'>
 
         <div className="col-span-4 flex flex-col gap-y-8 lg:gap-y-2">
           <SectionTitle>
@@ -68,21 +66,22 @@ export default function Home() {
             <Title2>Specialized in <span className='text-secondary'>web</span> and <span className='text-secondary'>mobile</span> development</Title2>
             <Text>
               <p>
-                Skilled in <span className='font-medium'>Vue</span>, <span className='font-medium'>React</span> and <span className='font-medium'>React Native</span>, with a good experience in <span className='font-medium'>back-end</span>, I provide <span className='font-medium'>end-to-end development solutions</span>
+                Skilled in <span className='font-medium'>Vue</span>, <span className='font-medium'>React</span> and <span className='font-medium'>React Native</span>, with a good experience in <span className='font-medium'>native mobile apps and back-end</span>, I provide <span className='font-medium'>end-to-end development solutions</span>
               </p>
               <p>
                 Combined with a passion for collaboration and mentoring, it fuels my journey of transforming your ideas into <span className='font-medium'>impactful digital realities.</span>
               </p>
             </Text>
           </div>
+          <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit'>Let&apos;s Talk !</Button></a>
 
         </div>
 
 
       </Section>
 
-      <Section className='mt-32 h-screen auto-rows-min gap-y-8'>
-        <div className="col-span-4 flex flex-col gap-y-8 lg:gap-y-2">
+      <Section className='auto-rows-min gap-y-8'>
+        <div className="col-span-4 flex flex-col mb-8">
           <SectionTitle>
             Services
           </SectionTitle>
@@ -158,9 +157,44 @@ export default function Home() {
 
         </Card>
 
-
       </Section>
 
+      <Section className='auto-rows-min gap-y-8 gap-x-20'>
+        <div className="col-span-4 flex flex-col mb-8">
+          <SectionTitle>
+            Testimonies
+          </SectionTitle>
+        </div>
+
+
+        <div className='col-start-1 col-span-6 flex flex-row gap-x-4'>
+          <div className='w-fit text-center flex flex-col items-center  text-[14px]'>
+            <Image src={"./yannick-bazin.png"} alt="yannick bazin - client" width={50} height={50} priority className="mb-2" />
+            Yannick Bazin<br /><i>BY Connect</i></div>
+          <div className='flex-1'>
+            <p><strong>Application BtoB - Salon Ecommerce</strong></p>
+            <p>Nous avons confié le développement de notre application mobile.
+              Nous sommes très satisfaits, respect du timing, l'app est stable, fonctionne très bien, ergonomique et est utilisée sans aucun souci depuis plus de 3 ans par des dizaines d'exposants. C'est ce qui fait toute la différence et professionnalisme</p>
+          </div>
+        </div>
+
+        <div className='col-span-6 flex flex-row gap-x-4'>
+          <div className='w-fit text-center flex flex-col items-center text-[14px]'>
+            <Image src={"./sebastien-cramon.png"} alt="sebastien Cramon - client" width={50} height={50} priority className="mb-2" />
+            Sebastien Cramon<br /><i>Flairplay</i>
+          </div>
+          <div className='flex-1 '>
+            <p><strong>Marketplace mobile dans l'univers du sport</strong></p>
+            <p>J'ai travaillé avec Jérémie pour le développement de notre application mobile sur iOS et Android.
+              Jérémie a montré un réel esprit d'initiative pour proposer des solutions efficaces à nos problématiques.
+              Son investissement et sa flexibilité, malgré des ajustements contants, ont été clés pour finaliser notre projet !
+            </p>
+            <p>Un grand merci !</p>
+          </div>
+        </div>
+      </Section>
+
+      <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit mx-auto mt-14'>Let&apos;s Talk !</Button></a>
     </main>
   )
 }
