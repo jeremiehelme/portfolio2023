@@ -89,7 +89,7 @@ export default function Home() {
 
         <Card className="col-start-1">
           <CardIcon>
-            <Image src={"./web-development.svg"} alt="jeremie helme - web development" width={40} height={40} className='mt-1' />
+            <Image src={"./web-development.svg"} alt="jeremie helme - web development" width={44} height={44} className='mt-1 mr-2' />
           </CardIcon>
 
           <div className='col-start-2 col-span-4 flex flex-col gap-y-5'>
