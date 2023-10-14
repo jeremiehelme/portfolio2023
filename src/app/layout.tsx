@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import localFont from 'next/font/local'
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+
 
 const karlaBold = localFont({
   variable: '--font-karla',
@@ -36,7 +38,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${karlaBold.variable} ${roboto.variable}`}>
-      <body >{children}</body>
+      <body >
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+          <GoogleAnalytics ga_id=
+            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
+      {children}</body>
     </html>
   )
 }

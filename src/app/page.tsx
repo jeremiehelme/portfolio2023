@@ -44,11 +44,11 @@ export default function Home() {
               </p>
             </Text>
           </div>
-          <Image src={"./clients.png"} alt="jeremie helme - clients" width={350} height={70} priority />
+          <Image src={"./clients.png"} alt="jeremie helme - clients" width={350} height={70} priority className="h-auto" />
         </div>
 
 
-        <Image src={"./portrait.png"} className='max-lg:hidden lg:absolute lg:top-20 lg:left-1/2 lg:-translate-x-[60%]' alt="jeremie helme - developer" width={573} height={765} priority />
+        <Image src={"./portrait.png"} className='max-lg:hidden lg:absolute lg:top-20 lg:left-1/2 lg:-translate-x-[60%] w-auto' alt="jeremie helme - developer" width={573} height={765} priority />
 
       </Section>
 
@@ -58,7 +58,7 @@ export default function Home() {
           <SectionTitle>
             15+ years experience <br />as a <span className='text-secondary'>developer</span>
           </SectionTitle>
-          <Image src={"./logos.svg"} alt="jeremie helme - technologies" width={287} height={76} className='' />
+          <Image src={"./logos.svg"} alt="jeremie helme - technologies" width={287} height={76} className="h-auto" />
         </div>
 
         <div className="col-start-7 col-span-6 flex flex-col gap-y-8 relative z-10">
