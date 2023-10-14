@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   keywords: ['developer', 'fullstack', 'Vue', 'React', 'React Native', 'france'],
   authors: [{ name: 'Jérémie' }, { name: 'Helme', url: 'https://jeremiehelme.fr' }],
   openGraph: {
-    images: ['../assets/og-image.jpg'],
+    images: ['/og-image.jpg'],
   },
 }
 
