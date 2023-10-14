@@ -23,12 +23,17 @@ const karlaBold = localFont({
 
 
 
-const roboto = Roboto({ weight: ['300','500'], subsets: ['latin'], variable: '--font-roboto' })
+const roboto = Roboto({ weight: ['300', '500'], subsets: ['latin'], variable: '--font-roboto' })
 
 
 export const metadata: Metadata = {
-  title: 'Jeremie Helme - fullstack developer',
-  description: 'Jeremie Helme - fullstack developer',
+  title: 'Jérémie Helme - Fullstack developer',
+  description: 'I help Startups and Agencies build exceptional digital products',
+  keywords: ['developer', 'fullstack', 'Vue', 'React', 'React Native', 'france'],
+  authors: [{ name: 'Jérémie' }, { name: 'Helme', url: 'https://jeremiehelme.fr' }],
+  openGraph: {
+    images: ['../assets/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({
@@ -43,7 +48,9 @@ export default function RootLayout({
           <GoogleAnalytics ga_id=
             {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         ) : null}
-      {children}</body>
+
+        {children}
+      </body>
     </html>
   )
 }

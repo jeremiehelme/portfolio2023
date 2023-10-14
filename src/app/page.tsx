@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import CTA from '@/components/CTA'
 import Menu from '@/components/Menu'
 import Button from '@/components/Button'
