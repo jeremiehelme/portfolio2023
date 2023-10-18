@@ -44,10 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${karlaBold.variable} ${roboto.variable}`}>
       <body >
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-          <GoogleAnalytics ga_id=
-            {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-        ) : null}
+
+        <GoogleAnalytics ga_id="G-T3QQTKEVP7" />
+
 
         {children}
       </body>
