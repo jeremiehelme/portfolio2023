@@ -7,10 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@apollo/client": "^3.8.3",
+    "@prismicio/client": "latest",
+    "@prismicio/next": "latest",
+    "@prismicio/react": "latest",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -26,6 +30,8 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "husky": "^8.0.3"
+    "@slicemachine/adapter-next": "latest",
+    "husky": "^8.0.3",
+    "slice-machine-ui": "latest"
   }
 }
