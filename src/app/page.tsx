@@ -34,7 +34,7 @@ export default function Home() {
       <CTA />
 
 
-      <Section className='max-lg:gap-y-10  h-screen max-h-[650px] lg:pt-20 lg:items-center'>
+      <Section className='max-lg:gap-y-10  h-screen max-h-[800px] lg:pt-[2vh] lg:items-center'>
         <div className="col-span-4 flex flex-col gap-y-2 max-lg:pt-20">
           <h2 className="text-primary font-bold text-xl lg:text-[1.875rem] leading-tight tracking-[-0.11rem]">Jérémie Helme</h2>
           <h1 className="relative z-20 text-4xl lg:text-[3.125rem] leading-[2rem] lg:leading-[2.81rem] tracking-[-0.1rem] lg:tracking-[-0.15rem]  font-sans font-bold flex flex-col">
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
 
 
-        <Image src={"./portrait.png"} className='max-lg:hidden lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-[62%] w-auto max-w-[520px]' alt="jeremie helme - developer" width={520} height={705} priority />
+        <Image src={"./portrait.png"} className='max-lg:hidden lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-1/2 lg:-translate-x-[62%] w-auto max-w-[520px]' alt="jeremie helme - developer" width={520} height={705} priority />
 
       </Section>
 
