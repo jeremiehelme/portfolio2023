@@ -60,7 +60,7 @@ export default function Home() {
                 Digital experiences
               </p>
             </Text>
-            <div class="flex flex-row gap-x-4">
+            <div className="flex flex-row gap-x-4">
               <a href='https://www.linkedin.com/in/jeremiehelme/'><Button variant="secondary">CV</Button></a>
               <Link href='#more' onClick={scrollToId}><Button>More about me</Button></Link>
             </div>
