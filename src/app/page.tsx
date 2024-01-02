@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image'
 import CTA from '@/components/CTA'
 import Menu from '@/components/Menu'
@@ -9,12 +11,22 @@ import Text from '@/components/Text'
 import Card from '@/components/cards/Card'
 import CardTitle from '@/components/cards/CardTitle'
 import CardIcon from '@/components/cards/CardIcon'
+import Link from "next/link";
 
 export default function Home() {
+
+  function scrollToId(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <main className="pb-20">
 
-      <Menu className='max-w-[1300px] max-lg:px-6 fixed z-20 top-0 w-full left-1/2 -translate-x-1/2'>
+      <Menu className='max-w-[1300px] max-xl:px-6 fixed z-20 top-0 w-full left-1/2 -translate-x-1/2'>
         <div className='font-bold font-sans text-base'>JH</div>
       </Menu>
 
@@ -22,36 +34,50 @@ export default function Home() {
       <CTA />
 
 
-      <Section className='lg:h-screen lg:min-h-[700px] max-h-[900px] items-center'>
-        <div className="max-lg:w-full col-span-4 flex flex-col gap-y-2">
-          <h2 className="text-primary font-bold text-xl lg:text-2xl leading-tight tracking-tight">Jérémie Helme</h2>
-          <h1 className="relative z-20 text-4xl lg:text-6xl font-sans font-bold leading-[2rem] lg:leading-[3.2rem] tracking-[-0.1rem] lg:tracking-[-0.3rem] flex flex-col">
+      <Section className='max-lg:gap-y-10  h-screen max-h-[650px] lg:pt-20 lg:items-center'>
+        <div className="col-span-4 flex flex-col gap-y-2 max-lg:pt-20">
+          <h2 className="text-primary font-bold text-xl lg:text-[1.875rem] leading-tight tracking-[-0.11rem]">Jérémie Helme</h2>
+          <h1 className="relative z-20 text-4xl lg:text-[3.125rem] leading-[2rem] lg:leading-[2.81rem] tracking-[-0.1rem] lg:tracking-[-0.15rem]  font-sans font-bold flex flex-col">
             <span className='text-primary'>Fullstack</span>
             <span className="text-secondary">Developer</span>
           </h1>
         </div>
 
-        <div className="lg:col-start-9 col-span-4 flex flex-col gap-y-8 relative z-10 items-start">
-          <div className='flex flex-col gap-y-3 text-primary'>
+        <div className="w-full lg:col-start-9 col-span-4 flex flex-col gap-y-8 relative z-10 items-start">
+          <div className='w-full  flex flex-col gap-y-8 text-primary'>
             <Title2>I help <span className='text-secondary'>Startups</span> and <span className='text-secondary'>Agencies</span> build exceptional <span className='text-secondary'>digital products</span></Title2>
-            <Text>
-              <p>
-                I enjoy crafting intuitive and visually appealing applications, for <span className='font-medium'>Web</span> and <span className='font-medium'>Mobile</span>
+            <Text className='gap-y-3'>
+              <p className="flex flex-row gap-x-2 items-center">
+                <Image src={"./check.svg"} alt="Web applications" width={20} height={20} priority className="w-[20px] object-fit h-[20px]" />
+                Web applications
               </p>
-              <p>
-                Adaptable, cost-efficient and solution-driven, I’m your trusted partner for <span className='font-medium'>cutting-edge digital solutions</span>
+              <p className="flex flex-row gap-x-2 items-center">
+                <Image src={"./check.svg"} alt="Web applications" width={20} height={20} priority className="w-[20px] object-fit h-[20px]" />
+                Mobile applications
+              </p>
+              <p className="flex flex-row gap-x-2 items-center">
+                <Image src={"./check.svg"} alt="Web applications" width={20} height={20} priority className="w-[20px] object-fit h-[20px]" />
+                Digital experiences
               </p>
             </Text>
+            <div class="flex flex-row gap-x-4">
+              <a href='https://www.linkedin.com/in/jeremiehelme/'><Button variant="secondary">CV</Button></a>
+              <Link href='#more' onClick={scrollToId}><Button>More about me</Button></Link>
+            </div>
           </div>
-          <Image src={"./clients.png"} alt="jeremie helme - clients" width={350} height={70} priority className="h-auto" />
+
         </div>
 
 
-        <Image src={"./portrait.png"} className='max-lg:hidden lg:absolute lg:top-20 lg:left-1/2 lg:-translate-x-[60%] w-auto' alt="jeremie helme - developer" width={573} height={765} priority />
+        <Image src={"./portrait.png"} className='max-lg:hidden lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-[62%] w-auto max-w-[520px]' alt="jeremie helme - developer" width={520} height={705} priority />
 
       </Section>
 
-      <Section className='min-h-[30vh]'>
+      <div id="more" className='w-full max-lg:px-6 lg:h-[250px] flex items-center justify-center'>
+        <Image src={"./clients.svg"} alt="jeremie helme - clients" width={350} height={70} priority className="w-full object-fit mx-auto h-[100px]" />
+      </div>
+
+      <Section className='min-h-[30vh] pt-16'>
 
         <div className="col-span-4 flex flex-col gap-y-8 lg:gap-y-2">
           <SectionTitle>
@@ -60,7 +86,7 @@ export default function Home() {
           <Image src={"./logos.svg"} alt="jeremie helme - technologies" width={287} height={76} className="h-auto" />
         </div>
 
-        <div className="col-start-7 col-span-6 flex flex-col gap-y-8 relative z-10">
+        <div className="col-start-7 col-span-5 flex flex-col gap-y-8 relative z-10 max-lg:pt-16">
           <div className='flex flex-col gap-y-3 text-primary'>
             <Title2>Specialized in <span className='text-secondary'>web</span> and <span className='text-secondary'>mobile</span> development</Title2>
             <Text>
@@ -79,8 +105,8 @@ export default function Home() {
 
       </Section>
 
-      <Section className='auto-rows-min gap-y-8'>
-        <div className="col-span-4 flex flex-col mb-8">
+      <Section className='auto-rows-min gap-y-8 !mt-32'>
+        <div className="col-span-4 flex flex-col">
           <SectionTitle>
             Services
           </SectionTitle>
@@ -158,8 +184,8 @@ export default function Home() {
 
       </Section>
 
-      <Section className='auto-rows-min gap-y-8 gap-x-20'>
-        <div className="col-span-4 flex flex-col mb-8">
+      <Section className='auto-rows-min gap-y-8 gap-x-20 !mt-32'>
+        <div className="col-span-4 flex flex-col">
           <SectionTitle>
             Testimonies
           </SectionTitle>
@@ -194,6 +220,6 @@ export default function Home() {
       </Section>
 
       <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit mx-auto mt-14'>Let&apos;s Talk !</Button></a>
-    </main>
+    </main >
   )
 }

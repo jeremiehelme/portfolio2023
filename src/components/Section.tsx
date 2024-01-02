@@ -1,12 +1,13 @@
 type Props = {
   children?: React.ReactNode,
-  className?: string
+  className?: string,
+  id?: string,
 };
 
-export default function Section({ children, className }: Props) {
+export default function Section({ children, className, id = "" }: Props) {
 
   return (
-    <section className={`${className ?? ''} mt-20 lg:mt-24 max-lg:px-6 relative flex flex-col gap-y-14 lg:grid lg:grid-cols-12 gap-x-5  justify-between  max-w-[1300px] mx-auto`}>
+    <section id={`${id}`} className={`${className ?? ''} relative flex flex-col lg:grid lg:grid-cols-12 max-xl:px-6 lg:gap-y-14 gap-x-5  max-w-[1300px] mx-auto`}>
       {children}
     </section>
   )
