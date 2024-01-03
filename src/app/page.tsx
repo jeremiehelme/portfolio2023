@@ -34,7 +34,7 @@ export default function Home() {
       <CTA />
 
 
-      <Section className='max-lg:gap-y-10  h-screen max-h-[800px] lg:pt-[2vh] lg:items-center'>
+      <Section className='max-lg:gap-y-10  min-h-[600px] h-[70vh] lg:h-[85vh] max-h-[800px] lg:pt-[2vh] lg:items-center'>
         <div className="col-span-4 flex flex-col gap-y-2 max-lg:pt-20">
           <h2 className="text-primary font-bold text-xl lg:text-[1.875rem] leading-tight tracking-[-0.11rem]">Jérémie Helme</h2>
           <h1 className="relative z-20 text-4xl lg:text-[3.125rem] leading-[2rem] lg:leading-[2.81rem] tracking-[-0.1rem] lg:tracking-[-0.15rem]  font-sans font-bold flex flex-col">
@@ -73,11 +73,11 @@ export default function Home() {
 
       </Section>
 
-      <div id="more" className='w-full max-lg:px-6 lg:h-[250px] flex items-center justify-center'>
+      <div id="more" className='w-full max-lg:px-6 lg:h-[15vh] flex items-center justify-center'>
         <Image src={"./clients.svg"} alt="jeremie helme - clients" width={350} height={70} priority className="w-full object-fit mx-auto h-[100px]" />
       </div>
 
-      <Section className='min-h-[30vh] pt-16'>
+      <Section className='min-h-[30vh] pt-16 mt-16'>
 
         <div className="col-span-4 flex flex-col gap-y-8 lg:gap-y-2">
           <SectionTitle>
