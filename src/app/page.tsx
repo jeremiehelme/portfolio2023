@@ -31,7 +31,7 @@ export default function Home() {
       </Menu>
 
 
-      <CTA />
+      
 
 
       <Section className='max-lg:gap-y-10  min-h-[600px] h-[70vh] lg:h-[85vh] max-h-[800px] lg:pt-[2vh] lg:items-center'>
@@ -77,33 +77,6 @@ export default function Home() {
         <Image src={"./clients.svg"} alt="jeremie helme - clients" width={350} height={70} priority className="w-full object-fit mx-auto h-[100px]" />
       </div>
 
-      <Section className='min-h-[30vh] pt-16 mt-16'>
-
-        <div className="col-span-4 flex flex-col gap-y-8 lg:gap-y-2">
-          <SectionTitle>
-            15+ years experience <br />as a <span className='text-secondary'>developer</span>
-          </SectionTitle>
-          <Image src={"./logos.svg"} alt="jeremie helme - technologies" width={287} height={76} className="h-auto" />
-        </div>
-
-        <div className="col-start-7 col-span-5 flex flex-col gap-y-8 relative z-10 max-lg:pt-16">
-          <div className='flex flex-col gap-y-3 text-primary'>
-            <Title2>Specialized in <span className='text-secondary'>web</span> and <span className='text-secondary'>mobile</span> development</Title2>
-            <Text>
-              <p>
-                Skilled in <span className='font-medium'>Vue</span>, <span className='font-medium'>React</span> and <span className='font-medium'>React Native</span>, with a good experience in <span className='font-medium'>native mobile apps and back-end</span>, I provide <span className='font-medium'>end-to-end development solutions</span>
-              </p>
-              <p>
-                Combined with a passion for collaboration and mentoring, it fuels my journey of transforming your ideas into <span className='font-medium'>impactful digital realities.</span>
-              </p>
-            </Text>
-          </div>
-          <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit'>Let&apos;s Talk !</Button></a>
-
-        </div>
-
-
-      </Section>
 
       <Section className='auto-rows-min gap-y-8 !mt-32'>
         <div className="col-span-4 flex flex-col">
@@ -184,6 +157,8 @@ export default function Home() {
 
       </Section>
 
+
+
       <Section className='auto-rows-min gap-y-8 gap-x-20 !mt-32'>
         <div className="col-span-4 flex flex-col">
           <SectionTitle>
@@ -220,6 +195,36 @@ export default function Home() {
       </Section>
 
       <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit mx-auto mt-14'>Let&apos;s Talk !</Button></a>
+
+      <Section className='min-h-[30vh] pt-16 mt-16'>
+
+        <div className="col-span-4 flex flex-col gap-y-8 lg:gap-y-2">
+          <SectionTitle>
+            15+ years experience <br />as a <span className='text-secondary'>developer</span>
+          </SectionTitle>
+          <Image src={"./logos.svg"} alt="jeremie helme - technologies" width={287} height={76} className="h-auto" />
+        </div>
+
+        <div className="col-start-7 col-span-5 flex flex-col gap-y-8 relative z-10 max-lg:pt-16">
+          <div className='flex flex-col gap-y-3 text-primary'>
+            <Title2>Specialized in <span className='text-secondary'>web</span> and <span className='text-secondary'>mobile</span> development</Title2>
+            <Text>
+              <p>
+                Skilled in <span className='font-medium'>Vue</span>, <span className='font-medium'>React</span> and <span className='font-medium'>React Native</span>, with a good experience in <span className='font-medium'>native mobile apps and back-end</span>, I provide <span className='font-medium'>end-to-end development solutions</span>
+              </p>
+              <p>
+                Combined with a passion for collaboration and mentoring, it fuels my journey of transforming your ideas into <span className='font-medium'>impactful digital realities.</span>
+              </p>
+            </Text>
+          </div>
+          <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit'>Let&apos;s Talk !</Button></a>
+
+        </div>
+
+
+      </Section>
+
+      
     </main >
   )
 }
