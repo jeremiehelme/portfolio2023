@@ -27,12 +27,14 @@ const roboto = Roboto({ weight: ['300', '500'], subsets: ['latin'], variable: '-
 
 
 export const metadata: Metadata = {
-  title: 'Jérémie Helme - Fullstack developer',
-  description: 'I help Startups and Agencies build exceptional digital products',
-  keywords: ['developer', 'fullstack', 'Vue', 'React', 'React Native', 'france'],
+  title: 'Jérémie Helme - Fullstack Developer | Web & Mobile Apps',
+  description: 'Experienced fullstack developer helping startups and agencies transform ideas into market-ready digital solutions. Specializing in Vue, React, and React Native development.',
+  keywords: ['fullstack developer', 'web development', 'mobile apps', 'Vue.js', 'React', 'React Native', 'startup development', 'agency developer', 'freelance developer', 'france'],
   authors: [{ name: 'Jérémie' }, { name: 'Helme', url: 'https://jeremiehelme.fr' }],
   openGraph: {
     images: ['/og-image.jpg'],
+    title: 'Jérémie Helme - Fullstack Developer',
+    description: 'Transform your ideas into market-ready digital solutions with 15+ years of development expertise.',
   },
 }
 

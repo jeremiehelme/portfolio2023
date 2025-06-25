@@ -45,24 +45,24 @@ export default function Home() {
 
         <div className="w-full lg:col-start-9 col-span-4 flex flex-col gap-y-8 relative z-10 items-start">
           <div className='w-full  flex flex-col gap-y-8 text-primary'>
-            <Title2>I help <span className='text-secondary'>Startups</span> and <span className='text-secondary'>Agencies</span> build exceptional <span className='text-secondary'>digital products</span></Title2>
+            <Title2>I help <span className='text-secondary'>Startups</span> and <span className='text-secondary'>Agencies</span> transform ideas into <span className='text-secondary'>market-ready digital solutions</span></Title2>
             <Text className='gap-y-3'>
               <p className="flex flex-row gap-x-2 items-center">
                 <Image src={"./check.svg"} alt="Web applications" width={20} height={20} priority className="w-[20px] object-fit h-[20px]" />
-                Web applications
+                Full-stack web applications
               </p>
               <p className="flex flex-row gap-x-2 items-center">
                 <Image src={"./check.svg"} alt="Web applications" width={20} height={20} priority className="w-[20px] object-fit h-[20px]" />
-                Mobile applications
+                Cross-platform mobile apps
               </p>
               <p className="flex flex-row gap-x-2 items-center">
                 <Image src={"./check.svg"} alt="Web applications" width={20} height={20} priority className="w-[20px] object-fit h-[20px]" />
-                Digital experiences
+                End-to-end digital solutions
               </p>
             </Text>
             <div className="flex flex-row gap-x-4">
-              <a href='https://www.linkedin.com/in/jeremiehelme/'><Button variant="secondary">CV</Button></a>
-              <Link href='#more' onClick={scrollToId}><Button>More about me</Button></Link>
+              <a href='https://www.linkedin.com/in/jeremiehelme/'><Button variant="secondary">View LinkedIn</Button></a>
+              <Link href='#more' onClick={scrollToId}><Button>See my work</Button></Link>
             </div>
           </div>
 
@@ -96,8 +96,7 @@ export default function Home() {
               development
             </CardTitle>
             <Text>
-              I translate UI/UX designs into interactive and engaging interfaces using modern front-end frameworks,
-              encompassing both front and back-end to build ready to launch solutions
+              I transform UI/UX designs into interactive, engaging interfaces using modern frameworks. From responsive front-end experiences to robust back-end architecture, I deliver complete, production-ready solutions.
             </Text>
           </div>
 
@@ -114,7 +113,7 @@ export default function Home() {
               development
             </CardTitle>
             <Text>
-              I develop cross-platform mobile apps with performance and user interaction in mind and Implement APIs to seamlessly connect with back-end services
+              I build high-performance, cross-platform mobile applications that prioritize user experience. Each app integrates seamlessly with back-end services through robust APIs, ensuring smooth functionality across devices.
             </Text>
           </div>
 
@@ -131,7 +130,7 @@ export default function Home() {
               <span className="text-secondary">Agencies</span>
             </CardTitle>
             <Text>
-              <p className="font-medium">Add versatility to your arsenal</p>My capacity to architect end-to-end solutions expedites project timelines and empowers you to deliver cutting-edge digital experiences to your clients.
+              <p className="font-medium">Expand your capabilities</p>My expertise in full-stack development accelerates project delivery and enables you to offer comprehensive digital solutions to your clients. From concept to deployment, I handle the technical complexity.
             </Text>
           </div>
 
@@ -148,8 +147,8 @@ export default function Home() {
               <span className="text-secondary">Startups</span>
             </CardTitle>
             <Text>
-              <p className="font-medium">Launch your POCs and MVPs in no time</p>
-              Optimize resource allocation and product iterations. Go swiftly from concept to market-ready solutions
+              <p className="font-medium">Fast-track your product development</p>
+              I help you build and iterate quickly, turning concepts into market-ready solutions. Maximize your resources while minimizing time to market with proven development processes.
             </Text>
           </div>
 
@@ -162,7 +161,7 @@ export default function Home() {
       <Section className='auto-rows-min gap-y-8 gap-x-20 !mt-32'>
         <div className="col-span-4 flex flex-col">
           <SectionTitle>
-            Testimonies
+            Testimonials
           </SectionTitle>
         </div>
 
@@ -173,8 +172,7 @@ export default function Home() {
             Yannick Bazin<br /><i>BY Connect</i></div>
           <div className='flex-1'>
             <p><strong>Application BtoB - Salon Ecommerce</strong></p>
-            <p>Nous avons confié le développement de notre application mobile.
-              Nous sommes très satisfaits, respect du timing, l&apos;app est stable, fonctionne très bien, ergonomique et est utilisée sans aucun souci depuis plus de 3 ans par des dizaines d&apos;exposants. C&apos;est ce qui fait toute la différence et professionnalisme</p>
+            <p>We entrusted Jérémie with the development of our mobile application. We are very satisfied - he respected the timeline, the app is stable, works perfectly, and has been used without any issues for over 3 years by dozens of exhibitors. This makes all the difference and shows true professionalism.</p>
           </div>
         </div>
 
@@ -184,17 +182,17 @@ export default function Home() {
             Sebastien Cramon<br /><i>Flairplay</i>
           </div>
           <div className='flex-1 '>
-            <p><strong>Marketplace mobile dans l&apos;univers du sport</strong></p>
-            <p>J&apos;ai travaillé avec Jérémie pour le développement de notre application mobile sur iOS et Android.
-              Jérémie a montré un réel esprit d&apos;initiative pour proposer des solutions efficaces à nos problématiques.
-              Son investissement et sa flexibilité, malgré des ajustements contants, ont été clés pour finaliser notre projet !
+            <p><strong>Sports Mobile Marketplace</strong></p>
+            <p>I worked with Jérémie on developing our mobile application for iOS and Android. 
+              Jérémie showed real initiative in proposing effective solutions to our challenges.
+              His commitment and flexibility, despite constant adjustments, were key to completing our project!
             </p>
-            <p>Un grand merci !</p>
+            <p>A big thank you!</p>
           </div>
         </div>
       </Section>
 
-      <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit mx-auto mt-14'>Let&apos;s Talk !</Button></a>
+      <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit mx-auto mt-14'>Start Your Project</Button></a>
 
       <Section className='min-h-[30vh] pt-16 mt-16'>
 
@@ -210,14 +208,14 @@ export default function Home() {
             <Title2>Specialized in <span className='text-secondary'>web</span> and <span className='text-secondary'>mobile</span> development</Title2>
             <Text>
               <p>
-                Skilled in <span className='font-medium'>Vue</span>, <span className='font-medium'>React</span> and <span className='font-medium'>React Native</span>, with a good experience in <span className='font-medium'>native mobile apps and back-end</span>, I provide <span className='font-medium'>end-to-end development solutions</span>
+                Expert in <span className='font-medium'>Vue</span>, <span className='font-medium'>React</span>, and <span className='font-medium'>React Native</span>, with extensive experience in <span className='font-medium'>native mobile development and back-end systems</span>. I deliver <span className='font-medium'>complete development solutions</span> from database to deployment.
               </p>
               <p>
-                Combined with a passion for collaboration and mentoring, it fuels my journey of transforming your ideas into <span className='font-medium'>impactful digital realities.</span>
+                My collaborative approach and passion for mentoring drive me to transform your vision into <span className='font-medium'>successful digital products</span> that make a real impact.
               </p>
             </Text>
           </div>
-          <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit'>Let&apos;s Talk !</Button></a>
+          <a href='https://www.linkedin.com/in/jeremiehelme/'><Button className='w-fit'>Get Started</Button></a>
 
         </div>
 
